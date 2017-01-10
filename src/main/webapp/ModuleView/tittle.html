@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<style>
+a{
+	font-family: "宋体";
+	font-size: 16px;
+}
+.logo {
+	font-family: "宋体";
+	font-size: 30px;
+}
+</style>
+<nav style="background-color: black;" class="navbar navbar-default" role="navigation">
+	<div style="margin-left: 100px;" class="container-fluid">
+	<div class="navbar-header">
+		<img alt="logo" src="Picture/logo.jpg" width=50 height=50>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li><a style="color:white;" class="logo navbar-brand" href="">getDemo&nbsp;</a></li>
+			<li id="xiazaidating" ><a style="color:white;" href="#">下载大厅</a></li> <!-- class="active" -->
+			<li id="paihangbang" class="dropdown">
+				<a href="#" style="color:white;" class="dropdown-toggle" data-toggle="">
+					排行榜
+					<b class="caret"></b>
+				</a>
+				<ul id="paihangbang_menu" class="dropdown-menu" style="background-color: black;">
+					<li><a href="#">最受欢迎</a></li>
+					<li><a href="#">最新更新</a></li>
+					<li><a  href="#">活跃度最高</a></li>
+					<li><a href="#">免费</a></li>
+					<li><a href="#">收费</a></li>
+				</ul>
+			</li>
+			<li id="guanyuwomen"><a href="#" style="color:white;">关于我们</a></li>
+		</ul>
+	</div>
+	</div>
+</nav>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#paihangbang").mouseover(function () {
+			$("#paihangbang_menu").show(100);
+		});
+		$("#paihangbang").mouseleave(function () {
+			$("#paihangbang_menu").hide(100);
+		});
+		$("#xiazaidating").mouseover(function () {
+			$("#xiazaidating").css("background-color","green");
+		});
+		$("#xiazaidating").mouseleave(function () {
+			$("#xiazaidating").css("background-color","black");
+		});
+		$("#guanyuwomen").mouseover(function () {
+			$("#guanyuwomen").css("background-color","green");
+		});
+		$("#guanyuwomen").mouseleave(function () {
+			$("#guanyuwomen").css("background-color","black");
+		});
+	});
+</script>
