@@ -23,7 +23,7 @@ a{
 					排行榜
 					<b class="caret"></b>
 				</a>
-				<ul id="paihangbang_menu" class="dropdown-menu" style="background-color: black;">
+				<ul id="paihangbang_menu" class="dropdown-menu" >
 					<li><a href="#">最受欢迎</a></li>
 					<li><a href="#">最新更新</a></li>
 					<li><a  href="#">活跃度最高</a></li>
@@ -31,8 +31,52 @@ a{
 					<li><a href="#">收费</a></li>
 				</ul>
 			</li>
+			<li id="qianduan" class="dropdown">
+				<a href="#" style="color:white;" class="dropdown-toggle" data-toggle="">
+					前端下载
+					<b class="caret"></b>
+				</a>
+				<ul id="qianduan_menu" class="dropdown-menu" >
+					<li><a href="#">HTML/CSS</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a  href="#">JQuery</a></li>
+					<li><a href="#">界面设计</a></li>
+				</ul>
+			</li>
+			<li id="houduan" class="dropdown">
+				<a href="#" style="color:white;" class="dropdown-toggle" data-toggle="">
+					后端下载
+					<b class="caret"></b>
+				</a>
+				<ul id="houduan_menu" class="dropdown-menu" >
+					<li><a href="#">PHP</a></li>
+					<li><a href="#">Java</a></li>
+					<li><a  href="#">Python</a></li>
+					<li><a href="#">C</a></li>
+					<li><a href="#">C++</a></li>
+					<li><a href="#">C#</a></li>
+					<li><a href="#">Go</a></li>
+					<li><a href="#">Ruby</a></li>
+				</ul>
+			</li>
+			<li id=yidong class="dropdown">
+				<a href="#" style="color:white;" class="dropdown-toggle" data-toggle="">
+					移动下载
+					<b class="caret"></b>
+				</a>
+				<ul id="yidong_menu" class="dropdown-menu" >
+					<li><a href="#">Android</a></li>
+					<li><a href="#">IOS</a></li>
+					<li><a  href="#">Unity 3D</a></li>
+					<li><a href="#">Cocos2d-x</a></li>
+				</ul>
+			</li>
 			<li id="guanyuwomen"><a href="#" style="color:white;">关于我们</a></li>
 		</ul>
+		<ul class="nav navbar-nav navbar-right"> 
+            	<li><a style="color:white;" href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li> 
+            	<li><a style="color:white;" href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li> 
+        </ul> 
 	</div>
 	</div>
 </nav>
@@ -44,6 +88,52 @@ a{
 		$("#paihangbang").mouseleave(function () {
 			$("#paihangbang_menu").hide(100);
 		});
+		$("#paihangbang").mouseover(function () {
+			$("#paihangbang").css("background-color","green");
+		});
+		$("#paihangbang").mouseleave(function () {
+			$("#paihangbang").css("background-color","black");
+		});
+		
+		$("#qianduan").mouseover(function () {
+			$("#qianduan_menu").show(100);
+		});
+		$("#qianduan").mouseleave(function () {
+			$("#qianduan_menu").hide(100);
+		});
+		$("#qianduan").mouseover(function () {
+			$("#qianduan").css("background-color","green");
+		});
+		$("#qianduan").mouseleave(function () {
+			$("#qianduan").css("background-color","black");
+		});
+		
+		$("#houduan").mouseover(function () {
+			$("#houduan_menu").show(100);
+		});
+		$("#houduan").mouseleave(function () {
+			$("#houduan_menu").hide(100);
+		});
+		$("#houduan").mouseover(function () {
+			$("#houduan").css("background-color","green");
+		});
+		$("#houduan").mouseleave(function () {
+			$("#houduan").css("background-color","black");
+		});
+		
+		$("#yidong").mouseover(function () {
+			$("#yidong_menu").show(100);
+		});
+		$("#yidong").mouseleave(function () {
+			$("#yidong_menu").hide(100);
+		});
+		$("#yidong").mouseover(function () {
+			$("#yidong").css("background-color","green");
+		});
+		$("#yidong").mouseleave(function () {
+			$("#yidong").css("background-color","black");
+		});
+		
 		$("#xiazaidating").mouseover(function () {
 			$("#xiazaidating").css("background-color","green");
 		});
@@ -56,5 +146,6 @@ a{
 		$("#guanyuwomen").mouseleave(function () {
 			$("#guanyuwomen").css("background-color","black");
 		});
+		
 	});
 </script>
