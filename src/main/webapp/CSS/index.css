@@ -1,1 +1,16 @@
 @CHARSET "UTF-8";
+/*web background*/
+.all {  
+    margin:0px auto;  
+    width:800px; /* 必须制定宽度 */  
+    height:100%; 
+}  
+.content {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    margin-top: -60px; /* negative half of the height */
+}
+.index_search {
+	cursor: pointer;
+}
