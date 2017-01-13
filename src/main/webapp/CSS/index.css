@@ -14,3 +14,15 @@
 .index_search {
 	cursor: pointer;
 }
+h4 {
+	font-family: '微软雅黑';
+}
+.form_reachieve {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	float: none;
+	width: 400px;
+	height: 245px;
+	border: 1px solid #000;
+}
